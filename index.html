@@ -42,23 +42,30 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>It is a long established fact that a reader will be distracted
-                        by the readable content of a page
-                        when looking at its layout. The point of using
-                        Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters, as opposed to using 'Content here, content here', making
-                        it look like readable English. Many desktop publishing packages and
-                        web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-                        will uncover many
-                        web sites still in their infancy. Various versions have evolved over the years,
-                        sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <p>As a student at MBM University, I am passionate about exploring the intersection of sports,
+                        graphic design, and basic web development. I thrive in creative environments where I can apply
+                        my skills in designing visually appealing graphics and developing user-friendly websites. My
+                        love for sports not only fuels my determination but also inspires me to create dynamic and
+                        engaging digital experiences that resonate with audiences. Through my portfolio, I aim to
+                        showcase my diverse talents and dedication to creating impactful designs and functional web
+                        solutions.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links " onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
                     </div>
 
-                    <div class="tab-contents active-tab " id="Skills">
+
+
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>DBuilding Android Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents  " id="Skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web app Development</li>
@@ -68,13 +75,6 @@
                     <div class="tab-contents" id="Experience">
                         <ul>
                             <li><span>2021 - current</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>DBuilding Android Apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>2016</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>App Development</span><br>DBuilding Android Apps</li>
                         </ul>
@@ -125,7 +125,7 @@
 
 
 
-  <!-- <div id="portfolio">
+    <!-- <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Portfolio</h1>
             <div class="work-list">
@@ -140,15 +140,21 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p ><i class="fa-solid fa-paper-plane"></i>contact techiesociety@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>techiesociety@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>9602609008</p>
                     <div class="social-icons">
-                        <a target="_blank" href="https://www.instagram.com/sumitmandan"><i class="fa-brands fa-instagram"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/sumitmandan/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://www.threads.net/@sumitmandan"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a target="_blank" href="https://youtube.com/@TheTechanPoint?si=_bYn-cDEJp-ZeCCY"><i class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sumitmandan/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/sumitmandan"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://youtube.com/@TheTechanPoint?si=_bYn-cDEJp-ZeCCY"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.threads.net/@sumitmandan"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+
                     </div>
-                    <a href="Sumit_Resume.pdf" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+                    <a href="Sumit_Resume.pdf" download class="btn btn2">Download Resume <i
+                            class="fa-solid fa-download"></i></a>
                 </div>
                 <div class="contact-left">
                     <form name="submit-to-google-sheet">
@@ -185,33 +191,33 @@
     <script>
         var sidemeu = document.getElementById("sidemenu");
 
-        function openmenu(){
+        function openmenu() {
             sidemeu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemeu.style.right = "-200px";
         }
     </script>
 
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCv4Z3ULyszBhdkDyI1j98jTmgqEyyJbJ_1eMXNhIUFrDXUz7OlRGEKlRLU7L_1LDn/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwCv4Z3ULyszBhdkDyI1j98jTmgqEyyJbJ_1eMXNhIUFrDXUz7OlRGEKlRLU7L_1LDn/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 
 </body>
 
